@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+/*重置样式*/
+
+body, div, p, ul, ol, dl, dt, dd, li, form, input, table, th, td, img, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #404040;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Microsoft Yahei", "微软雅黑"
+}
+
+address, caption, dfn, th, var, cite, code, i, em, label, input, select, textarea {
+    font-style: normal;
+    font-weight: normal;
+    font-family: inherit;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"] {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+}
+
+select, input, textarea {
+    font-family: inherit;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+    border: none
+}
+
+a:hover {
+    text-decoration: none;
+    color: #5d709a
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+/*清除select默认样式*/
+
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+
+select {
+    appearance: none;
+    /*将默认的select样式清除*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url(../images/arrow_down_03.png) no-repeat scroll 95% center transparent;
+    background-size: 10px;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+/*清除浮动*/
+
+.clear {
+    clear: both
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*公共*/
+
+.flt {
+    float: left
+}
+
+.frt {
+    float: right
+}
+
+
+/*正文样式*/
+body,html {
+  height: 100%;
+}
+body {
+  background: url(../images/bg.jpg) no-repeat 0 100%; background-size: 100%;
+}
+.logo { display: block; padding-top: 39px; width: 82%; margin-left: auto; margin-right: auto; margin-bottom: 30px; }
+.confirmNumberPlates {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.formgroup {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.input-field {
+    position: relative;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    outline: 0;
+    padding: 7px 5px 7px 30px;
+    border: 1px solid #aaaaaa;
+}
+
+.icon {
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    width: 13px;
+    height: 20px;
+    background: url(../images/spirit.jpg) no-repeat 0 0;
+    background-size: 19px;
+}
+
+.i1 {}
+
+.i2 {
+    width: 22px;
+    background-position: 0 -48px;
+}
+
+.i3 {
+    background-position: 0 -91px;
+}
+
+.w1 {
+    width: 67%;
+}
+
+.w2 {
+    width: calc(33% - 10px);
+}
+
+.imgcode, .getcode {
+    height: 33px;
+    margin-top: -33px;
+}
+
+.imgcode img {
+    width: 100%;
+    height: 100%;
+}
+
+.getcode {
+    background-color: #018de5;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 3px;
+}
+
+.select {
+    margin-top: 30px;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    padding: 10px 10px 20px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+.select span {
+    float: left;
+    width: 19px;
+    height: 19px;
+    background-image: url(../images/spirit.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -155px;
+    background-size: 19px;
+}
+
+.select span.on {
+    background-position: 0 -190px;
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #018de5;
+    color: #fff;
+    border: 0;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}

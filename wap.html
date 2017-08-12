@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <link rel="stylesheet" href="css/common.css">
+    <title>迁安信息港挪车系统</title>
+</head>
+
+<body>
+    <img class="logo" src="images/logo.jpg" alt="">
+    <h1 class="confirmNumberPlates">请确认车牌号：冀B8888</h1>
+    <div class="formgroup">
+        <form action="">
+            <div class="input-field">
+                <input type="text" placeholder="请输入手机号">
+                <i class="icon i1"></i>
+            </div>
+            <div class="input-field w1">
+                <input type="text" placeholder="请输入图形验证码">
+                <i class="icon i2"></i>
+            </div>
+            <div class="imgcode w2 frt"><img src="images/imgcode.png" alt=""></div>
+            <div class="input-field w1">
+                <input type="text" placeholder="请输入手机验证码">
+                <i class="icon i3"></i>
+            </div>
+            <div class="getcode w2 frt">获取验证码</div>
+            <div class="select">
+                <div class="input-field input-radio">
+                    <span class="on"><input type="radio" name="sel" checked></span><label for="">车辆挡路 需要挪车</label>
+                </div>
+                <div class="line" style="border-bottom: 1px solid #aaaaaa; margin-top: 10px; "></div>
+                <div class="input-field input-radio">
+                    <span><input type="radio" name="sel"></span><label for="">车辆出现事故，需要挪车</label>
+                </div>
+            </div>
+            <input type="submit" id="submit" value="通知车主">
+        </form>
+    </div>
+    <script src="js/jquery_2.1.1_min.js"></script>
+    <script>
+        $('.input-radio').on('click', function() {
+            $(this).find("input[type='radio']").get(0).checked = true;
+            $(this).children('span').addClass('on').parent('.input-radio').siblings('.input-radio').children('span').removeClass('on')
+            $(this).siblings('.input-radio').find("input[type='radio']").get(0).checked = false;
+        })
+    </script>
+</body>
+
+</html>
